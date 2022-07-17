@@ -1,0 +1,995 @@
+---
+title: "Bellabeat study case"
+author: "Fabiana Lodi Marzano"
+date: '2022-04-07'
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+---
+
+![ ](/Users/fabiana/Documents/Data Analystic Google/logo.jpg)
+
+**Case Study:** How Can a Wellness Technology Company Play It Smart?
+ 
+
+**The Proposal:** Bellabeat’s products and analyze smart device data to gain insight into how consumers are using their smart devices. The insights you discover will then help guide marketing strategy for the company. You will present your analysis to the Bellabeat executive team along with your high-level recommendations for Bellabeat’s marketing strategy.
+
+
+**Goal:** improve the marketing strategy for smart devices to expand sales through a better client experience and satisfaction.
+
+
+
+# **Step I.	ASK PHASE**
+
+
+
+*BELLABEAT*
+
+**Task Statement:** through data gain insights into how people are already using their smart devices to be able to give recommendations for how these trends can inform Bellabeat marketing strategy.
+
+**Key Stakeholders:** 
+1.	Urška Sršen: Bellabeat’s cofounder and Chief Creative Officer
+2.	Sando Mur: Mathematician, Bellabeat’s cofounder and key member of the Bellabeat executive team
+3.	Bellabeat marketing analytics team: A team of data analysts guiding Bellabeat's marketing strategy.
+
+**INITIAL ANALYSIS**
+
+##   I.1)	Study the company, their products and understand their philosophy.
+
+Niche: The company is working in the smart devices segment for the general fertile female public.
+
+Product: As smart products they have bracelets, clips, watches, spring(bottle of water).
+
+Philosophy: help women to optimize their lives by controlling their activities and its intensities, heartbeats, sleep hours and others …, offering supports as suggestions of better exercises, diets and others; by crossing that with their menstrual cycle.  
+ 
+##   I.2)	Study about Smart Devices
+
+Before starting work with data, a little study about smart devices is necessary.
+The following steps help to avoid bias in the data analysis and interpretation.
+
+-	**Understanding smart devices.**
+
+Smart devices are interactive electronic gadgets that understand simple commands sent by users and help in daily activities. Some of the most commonly used smart devices are smartphones, tablets, phablets, smartwatches, smart glasses and other personal electronics. While many smart devices are small, portable personal electronics, they are in fact defined by their ability to connect to a network to share and interact remotely. Many TV sets and refrigerators are also therefore considered smart devices.Click here [link](https://www.techopedia.com/definition/31463/smart-device)
+
+The part for this work that we are interested in are the Fitness Trackers.
+
+ **Fitness trackers** are great tools to help you lose weight, monitor your health, and keep you motivated. There are several types of fitness trackers available, such as smart watches, wristbands, and activity monitors. 
+  
+  Most fitness trackers measure heart rate, calories burned, and other physical metrics. Some trackers also include GPS technology, which allows them to record your location. They can be Waterproof, have a long Battery life and monitor things such as heart rate, Sleep Monitoring, Calorie Counter and other things.
+
+
+-	**Understanding the market**
+
+  There are leaders in the market, and to improve the sales and the marketing options it is a great starting point to search for “Market Studies”. By doing that, if some great –“ROCC” – data is found, it could support any finished analysis, or help to choose between two final different options. 
+
+  Usually, those studies are market´s size based. The smart watches and the fitness trackers are included in the same market analysis.
+
+  Through the market analysis we are able to interpret what the company don´t have and what could be implemented, by benchmarking their identified competitors. 
+  
+  In this case study, there are great studies in the www.statista.com website. Click here [link](https://www.statista.com/statistics/524830/global-smartwatch-vendors-market-share/)
+
+  In those studies we were able to understand that there are basically 3 market leaders’ companies: Apple, Samsung and Fitbit. 
+
+  The next step was made based in those 3 companies.
+
+-	**Benchmarking their competitors is always a good option.**
+
+  Bellabeat bets on Fitness Trackers without display, to make easier and even more confidential. It has a jewelry design, and menstrual cycling monitoring.
+ 
+  The 03 market´s leaders have displayers where dashboards are presented to help the monitoring.
+
+  They have functions such as barometric altimeter, oxygen measures and heart irregularities, which can be easily accessed.
+
+##   I.3)	Understanding the relationships between calories, activities intensities, heart beating, sleeping time.
+
+ To avoid exclude great data from our analysis, include bad data, or lose some important information, which could lead to biasing the analysis, understand the reason behind the data collection choice, is very important.
+
+  Maybe the collected data could offer an opportunity to researchers rich their research and discoveries about the weight lost, activities and calories relationships. Or it could provide a particular follow up for an individual life to avoid diseases. 
+  
+  I know all of them are speculations, but if we don´t understand what we have been monitoring we could miss something important. 
+  
+  Most of the calorie’s concepts are based on the balance between activities and food ingestion. The relationship between weight and calories is something used for a long time. But right now, there are studies which question those relationships in a blind way as it has been done until now. 
+  
+  In this concept, Herman Pontzer, a Duke professor, understands that our bodies are extremely intelligent and able to compensate the calories consumed between all our bodies activities.Click here [link](https://dupri.duke.edu/news-events/news/herman-pontzer-explains-where-our-calories-really-go-and-what-studying-humanitys)  
+  
+  Through those monitoring of calories and activities, it can be possible to understand when it´s time to change the diet to continue losing kilos, for example. Or even, monitor a possible unknown infection.
+
+###     I.3.1)	METs
+
+  MET stands for metabolic equivalent task. One MET is the amount of energy used while sitting quietly. Physical activities may be rated using METs to indicate their intensity. For example, reading may use about 1.3 METs while running use 8-9 METs. METs can also be translated into light, moderate, and vigorous intensities of exercise.Click here [link](https://www.hsph.harvard.edu/nutritionsource/staying-active/)
+
+  - Sedentary – Uses 1.5 or fewer METs. Examples are sitting, reclining or lying down.
+  - Light Intensity – Uses from 1.6 - 3.0 METs. Examples are walking at a leisurely pace or standing in line at the store.
+  - Moderate Intensity – Uses from 3.0 – 6.0 METs. Examples are walking briskly, vacuuming, or raking leaves.
+  - Vigorous Intensity – Uses from 6.0+ METs. Examples are walking very quickly, running, taking an aerobics class, or shoveling snow.
+
+  In those watches this function is automatically on, what helps as a starting point to understand what is happening. 
+  
+
+###     I.3.2)	Weight and BMI
+
+
+  Control the weight is nowadays a practice used, in some part of our lives, for almost every person in the world.
+  
+  In this control weight world, everyone had already listened about the BMI - body mass index, and knows it´s a relationship between weight and height.
+  
+  As long as, you pass through your life, you know how hard it´s to be inside the BMI interval to be considered not at risk of develop diabetes, per example.
+  
+  It has the plus side of be a quick and easy measure method, with minimal cost. And it matters: for most adults, there is a clear correlation between higher BMI and negative health consequences. As with any weight measure, you need reliable scales, plus you will need a tape measure for height.
+  
+  But it has also the downside, its measures can´t differentiate between fat and lean muscle weight. It isn´t very accurate for people who are elderly, pregnant, or very muscular, and others.Click here [link](https://www.bhf.org.uk/informationsupport/heart-matters-magazine/nutrition/weight/best-way-to-measure-body-fat) 
+  
+  In this context, it´s important to mention that doesn´t work for something around 60% of the women and 20 % of the men.
+
+  Today, with more advanced studies it is well known that the fat around your abdomen is the big villain to put you at risk of heart disease, type 2 diabetes and stroke. There are a lot of studies that claims that is the one control parameter that should be better monitored.
+Click here [link](https://www.healthdirect.gov.au/body-mass-index-bmi-and-waist-circumference#:~:text=Two%20methods%20that%20are%20commonly,of%20developing%20weight%2Drelated%20disease.)
+  
+  
+###     I.3.3)	SLEEP
+
+
+  Our bodies are a very complex machine, between thousands of chemical reactions, we have some primordial functions that are responsible by our basic’s well-being.
+  
+  Sleep is something that is so important as it is eat. Our body functions, including cerebral activities relies in a good sleep night .. or day in some situations.
+  
+  So how much sleep did you get last night ? What about the night before ? How much sleep do you actually need ?
+  
+  Keeping track of your sleep schedule might not always be your top priority, but getting enough sleep is critical to your health in many ways.Click here [link](https://www.healthline.com/health/sleep/sleep-calculator#not-enough-sleep) 
+
+  You may not realize it, but the amount of sleep you get can affect everything from weight and metabolism to brain function and mood.
+  
+  There is not a precise rule about how much you should sleep. Each organism is unique, and the need for sleep vary as such. The thing that is the most important is how you feel when you awake. 
+  
+  To feel rested, you need to complete between 5 to 9 cycles. It means you should sleep between 7 to 9 hours a day. That depends on your body call.
+    
+  The sleep has 4 different stages and each stage have their function:
+  
+  -	N1(formerly stage1):  this first stage of sleep marks the period between being awake and falling sleep;
+  -	N2(formerly stage2): the onset of sleep begins at this stage, as you become unaware of your surroundings. Your body temperatures drops slightly, and your breath and heart rate become regular;
+  -	N3(formerly stages 3 and 4): during this deepest and most restorative sleep stage, breathing slows, blood pressure drops, muscle relax, hormones are released, healing occurs, and your body becomes re-energized;
+  -	REM: this final stage takes up 25 percent of your sleep cycle. During REM sleep, your brain is most active, dreams occur, and your eyes move back and forth rapidly under your eyelids. REM sleep helps boost your mental and physical performance when you are wake up.
+  
+  Now we can understand why sleep is so important. It can give to you a healthy life or at least add to it. It can work to regulate hormones, control blood pressure, help with weight management, improves athletic performance, helps to maintain a healthy immune system, and more.
+  
+  “During sleep, the stimulation of your nervous system is reduced and most of your body processes slow down”, says Dr. Lawrence Epstein, associate physician with the division of sleep and circadian disorders at Harvard - affiliated Brigham and Women´s Hospital.Click here [link](https://www.health.harvard.edu/blog/how-does-sleep-affect-your-heart-rate-2021012921846#:~:text=People%20typically%20spend%20about%20half,below%20your%20resting%20heart%20rate.)
+  
+  Within about five minutes after you drift off to sleep, your heart rate gradually slows to its resting rate as you enter what’s known as light sleep. Your body temperature drops, and your muscles relax. People typically spend about half the night in light sleep. But during the next phase, deep sleep, your blood pressure falls, and your heart rate slows to about 20% to 30% below your resting heart rate.
+  
+  
+###     I.3.4)	Heart Rate
+
+
+  Heart Rate can be also known as “pulse”. It is the number of times your heart beats per minute.
+  
+  It can be felt and measured at the wrist, side of the neck, back of the knees and other parts of the body. If we think the wrist is one of the most simple and effective places to measure it. That´s why the most of smart devices to count bpm (heartbeats per minute), for big public, are the smart watches.
+  
+  As we saw previously, to monitor the sleep, heart rate is used too, but not only. It´s present in everyday life activity. 
+  
+  For each activity executed, during the day, we have a different heart rate. If we could be able to control that, we could avoid a few future health problems.
+  
+  Physical activities can be monitored, the same way that sleep can be monitored.
+  
+  Thinking about physical activities, each heart frequency that we work, we are pursuing something different.  Heart rate is an essential piece of data for effective training.< by Philippe Propage – coach of athletes at an international level.>
+  
+   To know the better, secure and effective heart rate, to reach differentiate goals, it´s necessary to focus in understand the HRmax – maximum number of times your heart can beat in 1 minute.  
+  
+  The HRmax is a relationship with our age. With the years passing by, our HRmax drops 1 bpm per year. There are different ways to determine the better HRmax to workout. Two of them are the most used: Astrand and Karvonen.
+  
+  The Astrand method apply the following formula: 
+                                                for women:      226-age
+                                                for men:        220-age. 
+  The Karvonen applies the formula:
+					                         %cardio=(HRexercise-HRrest)/(HRmax-HRrest).
+					                         
+  Now, with the HRmax calculated we can define 5 zones of workout:
+  
+-	Blue: warm-up / recovery: 50-60% of the %cardio.
+-	Green: 60-70% of the %cardio, after 20-40min in this zone, the muscles will begin to draw on the fat reserves. It is possible to workout at this pace for long as wanted.
+-	Yellow: 70-80% of the %cardio, effort is intense, should not be more than 45 minutes at this pace. The muscles get used to consuming sugar available in your muscle fibers more efficiently. 
+-	Orange: 80-90% of the %cardio will be the anaerobic threshold (pace that be sustained for 45 minutes);
+-	Red: 95-100% of the %cardio, will be the Maximum Aerobic Capacity zone (VO2 max), can be endured for 15 seconds to 2 minutes tops.   
+
+  By knowing what is being expected from the workout, it will be possible to control the heart rate.
+
+**ENDING FISRT STEPS:** Now he have information to do SMART questions.
+
+**QUESTIONS**
+
+-	What functions are monitored by the fitness trackers?
+-	Are the people misusing the trackers?
+-	If they are misusing, is there any option to avoid it?
+-	Which function is the most accessed?
+-	Which is the average age who uses it? 
+-	For the most searched functions, are they age related? Are they gender related?
+-	How many people have weight issues?
+-	Are they experiencing sleep privation?
+-	How is the quality of their sleep?
+
+  
+# **Step II.	PREPARE PHASE**
+
+
+## II.1)	 SELECTING DATA FOR ANALYSIS
+
+### II.1.1	Information on Data Source
+
+
+-	The data is publicly available on Kaggle: FitBit Fitness Tracker Data and stored in 18 csv files.
+-	Generated by respondents from a distributed survey via Amazon Mechanical Turk between 03.12.2016-05.12.2016.
+-	30 FitBit users who consented to the submission of personal tracker data.
+-	Data collected includes (1) minute-level output for physical activity, (2) heart rate, (3) sleep monitoring.
+-	Individual reports can be parsed by export session ID (column A) or time stamp (column B).
+-	Variation between output represents use of different types of Fitbit trackers and individual tracking behaviors / preferences.
+
+### II.1.2	Data Limitations / Reliability
+
+-	Data related for the time space between 04.12.2016-05.12.2016: too short time space to track the everyday routine.
+-	The fitness trackers evolve constantly, in 5 years all the monitoring activities offered in those trackers, as trends for all smart devices, probably changed.
+-	There is no information if that was the individual´s learning period.
+-	There is no information about gender and age.	
+-	The sample space is too small to extract more distinguished patterns.
+
+### II.1.3	Data Selection
+
+All 18 CSV files offered as an initial step.
+To import in R used: read_csv()
+
+### II.1.4	Data Organization
+
+Based in the columns and the rows numbers the data could be divided into 5 groups:
+
+(a)	Daily: 04 tables
+
+![ ](/Users/fabiana/Documents/Data Analystic Google/dailyActivity.jpg)
+ 
+(b)	Hourly: 03 tables
+
+![ ](/Users/fabiana/Documents/Data Analystic Google/hourly.jpg)
+
+(C)	Minutes Narrow: 03 tables
+
+![ ](/Users/fabiana/Documents/Data Analystic Google/minutes.jpg)
+
+
+(d)	Minutes Wide:
+
+![ ](/Users/fabiana/Documents/Data Analystic Google/minutesWide.jpg)
+ 
+
+(e)	Distinct: 
+ 
+![ ](/Users/fabiana/Documents/Data Analystic Google/distinct.jpg)
+
+
+# Step III.	PROCESS
+
+
+##  III.1 – TOOLS USED
+
+  There are different data frames sizes. Importing and doing an initial study about the data frames.
+
+### III.1.1) Import all data frames in R: to see the number of columns and rows of each data frame.
+
+  After that, it ´s possible to define the best and simplest tools to be used in the analysis.
+
+  Starting by loading the packages:
+```{r loading packages, message=FALSE, warning=FALSE}
+library(readr)
+library(tidyverse)
+library(janitor)
+library(lubridate)
+library(sqldf)
+library(ggpubr)
+library(ggplot2)
+library(scales)
+library(skimr)
+library(here)
+library(tidyr)
+library(reshape2)
+library(RColorBrewer)
+library(dplyr)
+```
+
+  And then by read_csv import all data.
+
+```{r importing datasets, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+daily_Intensities <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/dailyIntensities.csv")
+daily_Activity <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/daily_Activity.csv")
+dailycalories_merged <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/dailyCalories_merged.csv")
+daily_Steps <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/dailySteps.csv")
+heartrate_seconds_merged <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/heartrate_seconds_merged.csv")
+hourlyIntensities_merged <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/hourlyIntensities_merged.csv")
+hourlySteps_merged <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/hourlySteps_merged.csv")
+minuteCaloriesNarrow_merged <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/minuteCaloriesNarrow_merged.csv")
+minuteIntensitiesNarrow_merged <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/minuteIntensitiesNarrow_merged.csv")
+minuteStepsNarrow_merged <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/minuteStepsNarrow_merged.csv")
+minuteMETsNarrow_merged <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/minuteMETsNarrow_merged.csv")
+minuteCaloriesWide_merged <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/minuteCaloriesWide_merged.csv")
+minuteIntensitiesWide_merged <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/minuteIntensitiesWide_merged.csv")
+minuteStepsWide_merged <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/minuteStepsWide_merged.csv")
+hourlyCalories_merged <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/hourlyCalories_merged.csv")
+weightLogInfo_merged <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/weightLogInfo_merged.csv")
+sleepDay_merged <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/sleepDay_merged.csv")
+hourlyCalories_merged <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/hourlyCalories_merged.csv")
+minuteSleep_merged <- read_csv("C:/Users/fabiana/Documents/Data Analystic Google/Fitbit Fitness tracker data/Fitabase Data 4.12.16-5.12.16/minuteSleep_merged.csv")
+```
+
+  
+### III.1.2) Excel, SQL and R
+
+**Excel:** for new and small tables to be plotted as Pie Chart.
+
+**R and SQL:** to clean, make queries, visualize data, and plot graphics. 
+
+
+### III.1.2.1) Inspecting Data:
+
+  Made in R for all of them, by using the following functions:
+  
+• head()
+•	glimpse()
+•	skim_without_charts()
+
+### III.1.2.2 ) Search for duplicates and clean all of them:
+
+**R:** 
+
+      #searching for duplicates
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+sum(duplicated(hourlyCalories_merged))
+sum(duplicated(hourlyIntensities_merged))
+```
+... run for all data frames.
+
+```{r searching for duplicates, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+sum(duplicated(hourlySteps_merged))  	
+sum(duplicated(minuteCaloriesNarrow_merged))  
+sum(duplicated(minuteIntensitiesNarrow_merged))   
+sum(duplicated(minuteMETsNarrow_merged))   
+sum(duplicated(minuteStepsNarrow_merged))  
+sum(duplicated(minuteCaloriesWide_merged)) 
+sum(duplicated(minuteIntensitiesWide_merged))  
+sum(duplicated(minuteStepsWide_merged))  
+sum(duplicated(minuteSleep_merged))   
+sum(duplicated(weightLogInfo_merged))  
+sum(duplicated(heartrate_seconds_merged))  
+sum(duplicated(sleepDay_merged))
+sum(duplicated(daily_Activity))
+sum(duplicated(dailycalories_merged))
+sum(duplicated(daily_Intensities))
+sum(duplicated(daily_Steps))
+```
+  **Results:** 
+  
+  - sum(duplicated(sleepDay_merged))         #results [1] 3 
+  - sum(duplicated(minuteSleep_merged))      #results [1] 543
+  
+       #removing duplicates
+
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+SleepDay <- unique(sleepDay_merged)
+minuteSleep <-unique(minuteSleep_merged)
+```
+      
+      #confirming the duplicated was eliminated
+
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+sum(duplicated(SleepDay))
+sum(duplicated(minuteSleep))
+```
+
+### III.1.2.3) Working with data
+
+  **Standardization:** create new df with name standard.
+  
+  **Converting:**      “character” in “datetime” type, and “ hour” type AM/PM in numbers.
+  
+  **Splitting:**  “datetime” into “Date” and “Time” columns – when possible.
+
+```{r standar_convert, message=FALSE, warning=FALSE, paged.print=FALSE}
+minute_METsNarrow <- minuteMETsNarrow_merged
+minute_METsNarrow$ActivityMinute = as.POSIXct(minute_METsNarrow$ActivityMinute, format = "%m/%d/%Y %I:%M:%S %p")
+minute_METsNarrow$time <- format(minute_METsNarrow$ActivityMinute, format = "%H:%M:%S")
+minute_METsNarrow$Date <- format(minute_METsNarrow$ActivityMinute, format = "%Y-%m-%d")
+```
+
+Standard data frames:
+```{r standard all data frames, message=FALSE, warning=FALSE, paged.print=FALSE}
+minute_CaloriesNarrow <- minuteCaloriesNarrow_merged
+minute_StepsNarrow <- minuteStepsNarrow_merged
+minute_IntensitiesNarrow <- minuteIntensitiesNarrow_merged
+minute_CaloriesWide <- minuteCaloriesWide_merged
+minute_IntensitiesWide <- minuteIntensitiesWide_merged
+minute_StepsWide <- minuteStepsWide_merged
+sleep_Day <- sleepDay_merged
+minute_Sleep <- minuteSleep_merged
+heart_rate <- heartrate_seconds_merged
+hourly_Steps <- hourlySteps_merged
+hourly_Calories <- hourlyCalories_merged
+hourly_Intensities <- hourlyIntensities_merged
+hour_calories <- hourlyCalories_merged
+weight_log <- weightLogInfo_merged
+daily_Calories <- dailycalories_merged
+
+```
+Obs.: daily data frames the four of them are already in the standard.
+```{r c_s hourly_calories, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+hourly_Calories$ActivityHour = as.POSIXct(hourly_Calories$ActivityHour, format = "%m/%d/%Y %I:%M:%S %p")
+hourly_Calories$time <- format(hourly_Calories$ActivityHour, format = "%H:%M:%S")
+hourly_Calories$date <- format(hourly_Calories$ActivityHour, format = "%Y-%m-%d") 
+```
+
+```{r minuteSleep, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+minute_Sleep$date = as.POSIXct(minute_Sleep$date, format = "%m/%d/%Y %I:%M:%S %p")
+minute_Sleep$time <- format(minute_Sleep$date, format = "%H:%M:%S")
+minute_Sleep$SleepDate <- format(minute_Sleep$date, format = "%Y-%m-%d")
+```
+
+```{r dailycalories, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+daily_Calories$ActivityDay = as.POSIXct (daily_Calories$ActivityDay, format = "%m/%d/%Y")
+```
+
+```{r dailyStep, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+daily_Steps$ActivityDay = as.POSIXct (daily_Steps$ActivityDay, format = "%m/%d/%Y")
+```
+
+```{r dailyIntens, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+daily_Intensities$ActivityDay = as.POSIXct (daily_Intensities$ActivityDay, format = "%m/%d/%Y")
+```
+
+```{r dailyAactivity, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+daily_Activity$ActivityDate = as.POSIXct (daily_Activity$ActivityDate, format = "%m/%d/%Y")
+```
+
+```{r convert_spllit all, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+minute_StepsNarrow$ActivityMinute = as.POSIXct(minute_StepsNarrow$ActivityMinute, format = "%m/%d/%Y %I:%M:%S %p")
+minute_StepsNarrow$time <- format(minute_StepsNarrow$ActivityMinute, format = "%H:%M:%S")
+minute_StepsNarrow$Date <- format(minute_StepsNarrow$ActivityMinute, format = "%Y-%m-%d")
+
+minute_IntensitiesNarrow$ActivityMinute = as.POSIXct(minute_IntensitiesNarrow$ActivityMinute, format = "%m/%d/%Y %I:%M:%S %p")
+minute_IntensitiesNarrow$time <- format(minute_IntensitiesNarrow$ActivityMinute, format = "%H:%M:%S")
+minute_IntensitiesNarrow$Date <- format(minute_IntensitiesNarrow$ActivityMinute, format = "%Y-%m-%d")
+
+minute_CaloriesWide$ActivityHour = as.POSIXct(minute_CaloriesWide$ActivityHour, format = "%m/%d/%Y %I:%M:%S %p")
+minute_CaloriesWide$time <- format(minute_CaloriesWide$ActivityHour, format = "%H:%M:%S")   
+minute_CaloriesWide$Date <- format(minute_CaloriesWide$ActivityHour, format = "%Y-%m-%d") 
+
+minute_IntensitiesWide$ActivityHour = as.POSIXct(minute_IntensitiesWide$ActivityHour, format = "%m/%d/%Y %I:%M:%S %p")
+minute_IntensitiesWide$time <- format(minute_IntensitiesWide$ActivityHour, format = "%H:%M:%S")
+minute_IntensitiesWide$Date <- format(minute_IntensitiesWide$ActivityHour, format = "%Y-%m-%d") 
+
+minute_StepsWide$ActivityHour = as.POSIXct(minute_StepsWide$ActivityHour, format = "%m/%d/%Y %I:%M:%S %p")
+minute_StepsWide$time <- format(minute_StepsWide$ActivityHour, format = "%H:%M:%S")
+minute_StepsWide$Date <- format(minute_StepsWide$ActivityHour, format = "%Y-%m-%d") 
+
+sleep_Day$SleepDay = as.POSIXct(sleep_Day$SleepDay, format = "%m/%d/%Y %I:%M:%S %p")
+sleep_Day$time <- format(sleep_Day$SleepDay, format = "%H:%M:%S")
+sleep_Day$Date <- format(sleep_Day$SleepDay, format = "%Y-%m-%d") 
+
+weight_log$Date = as.POSIXct(weight_log$Date, format = "%m/%d/%Y %I:%M:%S %p")
+weight_log$time <- format(weight_log$Date, format = "%H:%M:%S")
+weight_log$Weightdate <- format(weight_log$Date, format = "%Y-%m-%d")
+
+hourly_Intensities$ActivityHour = as.POSIXct(hourly_Intensities$ActivityHour, format = "%m/%d/%Y %I:%M:%S %p")
+hourly_Intensities$time <- format(hourly_Intensities$ActivityHour, format = "%H:%M:%S")
+hourly_Intensities$date <- format(hourly_Intensities$ActivityHour, format = "%Y-%m-%d") 
+
+```
+
+```{r heart rate, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+heart_rate$Time = as.POSIXct(heart_rate$Time, format = "%m/%d/%Y %I:%M:%S %p")
+heart_rate$HeartTime <- format(heart_rate$Time, format = "%H:%M:%S")
+heart_rate$Date <- format(heart_rate$Time, format = "%Y-%m-%d")    
+
+```
+
+```{r minutecalories, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+minute_CaloriesNarrow$ActivityMinute = as.POSIXct(minute_CaloriesNarrow$ActivityMinute, format = "%m/%d/%Y %I:%M:%S %p")
+minute_CaloriesNarrow$time <- format(minute_CaloriesNarrow$ActivityMinute, format = "%H:%M:%S")
+minute_CaloriesNarrow$Date <- format(minute_CaloriesNarrow$ActivityMinute, format = "%Y-%m-%d")
+```
+
+						
+### III.1.2.4) Verifying data:
+
+•	head()
+•	skim_without_data()
+•	glimpse()
+•	View()
+
+### III.1.2.5) Processing to start to look for patterns
+
+(a)	Counting the participants number by df:
+
+Using SQL to count:
+
+```{r sleepday, message=FALSE, warning=FALSE, paged.print=FALSE}
+    sqldf ("SELECT COUNT(DISTINCT ID)
+           FROM sleep_Day")                            
+```
+```{r minute_Sleep, message=FALSE, warning=FALSE, paged.print=FALSE}
+         sqldf ("SELECT COUNT(DISTINCT ID)
+           FROM minute_Sleep")     	
+```
+```{r minute_StepsWide, message=FALSE, warning=FALSE, paged.print=FALSE}
+         sqldf ("SELECT COUNT(DISTINCT ID)
+           FROM minute_StepsWide")     	
+```
+```{r weight_log, message=FALSE, warning=FALSE, paged.print=FALSE}
+       sqldf ("SELECT COUNT(DISTINCT ID)
+           FROM weight_log")    
+```
+```{r heartrate, message=FALSE, warning=FALSE, paged.print=FALSE}
+sqldf ("SELECT COUNT(DISTINCT ID)
+           FROM heart_rate")     
+```
+**OBS.:** As the goal here is to count the number of participants per data set, the data from the same group of data don´t need to be counted. The result would be the same.
+
+(b)	Studying METs data frame:
+  Number of METs per hour.
+```{r METhour, message=FALSE, warning=FALSE, paged.print=FALSE}
+METs_exercId <-    sqldf("SELECT
+                     Id, 
+                     ActivityMinute,
+                     METs,
+                     time,
+                     Date,
+                     COUNT(METS)/60
+                    FROM minute_METsNarrow
+                    WHERE METs > '60'
+                     GROUP BY Id")  
+```
+
+![Table - METs per hour ](/Users/fabiana/Documents/Data Analystic Google/METhour.jpg)
+
+
+- Creating a table where there is the reference knew for METs values:
+
+*Remembering the METs values are multiplied by 10 in the system. The real values should be divided by 10.*  
+
+```{r METclassification, message=FALSE, warning=FALSE, paged.print=FALSE}
+METs_classification <- sqldf ("SELECT Id, 
+      			 ActivityMinute, 
+      			 METs,
+      			 time,
+       			 Date,
+       			 CASE
+       			 WHEN METs < 15 THEN 'Sedentary'
+       			 WHEN METs >= 15 AND METs <= 30 THEN 'Light'
+       			 WHEN METs > 30 AND METs < 60 THEN 'Moderate'
+       			 WHEN METs >= 60 THEN 'Vigorous'
+       			 ELSE 'other'
+      			 END MEts_category
+      			 FROM minute_METsNarrow")
+
+```
+
+```{r METs classification}
+head(METs_classification)
+```
+
+
+The next step is to track “vigorous” activities:
+
+```{r vigorous, message=FALSE, warning=FALSE, paged.print=FALSE}
+MET_Vigorous <- sqldf (" SELECT * 
+      			             FROM METs_classification
+      			             WHERE METs >= '140'
+     			               ORDER BY Id")      
+```
+
+```{r}
+head(MET_Vigorous)
+```
+
+(c) Studying Heart Rate: following the same philosophy started with high heart rate
+
+   - Heart Rate = 190 - 222:
+
+```{r 190 heart rate}
+heart_Rate_190 <- sqldf (" SELECT * 
+     			                 FROM heart_rate
+      			               WHERE Value between '190' AND '222'
+     			                 ORDER BY Id")
+head(heart_Rate_190)
+```
+
+
+    - Heart Rate = 170 - 189:
+
+```{r 170 heart rate}
+heart_Rate_170 <- sqldf (" SELECT * 
+      			               FROM heart_rate
+      			               WHERE Value between '170' AND '189'
+      			               ORDER BY Id")
+head(heart_Rate_170)
+
+```
+
+Following the same idea as before, for the next queries.
+
+Starting to restrict Heart Rate based in intensity, date, time and Id. 
+
+Two candidates will be selected to demonstrate the analysis 2022484408 , 4558609924.
+
+```{r 2022}
+heart_Rate2022 <- sqldf("SELECT * 
+                        FROM heart_rate
+                        WHERE Id = 2022484408
+                        AND 
+                        Date = '2016-04-21' 
+                        AND
+                        HeartTime BETWEEN '16:45:00' AND '17:00:00' ")
+
+head(heart_Rate2022)
+```
+
+Id 4558609924:
+
+```{r 4558}
+heart_rate4558 <-  sqldf ("SELECT * 
+                        	 FROM heart_rate
+                        	 WHERE Id = 4558609924
+                        	 AND 
+                        	 Date = '2016-05-08'
+                        	 AND
+                        	 HeartTime BETWEEN '11:00:00' AND '14:15:00' ")
+
+head(heart_rate4558)
+```
+
+This was done for others Id, but to simplify here it will be presented only two cases.
+
+(d) Studying Weight:
+
+```{r weight}
+head(weight_log)
+```
+
+
+# Step IV.	Analyze / Share – phases
+
+## IV.1 ) Data Organization
+
+ The data organization for analysis, was structured based on the relationships between MET and Heart Rate.
+
+ The starting point were values associated with high intensity activities.
+
+ The data frames such as Steps and Daily Activities were used to confirm the pattern observed in the others two previously tables.
+
+ The Sleep data frame was crossed with the METs Narrow data frame to understand the participants sleep routine.
+
+ The weight data frame was used to investigate the relationships with BMI, weight and measure frequency.
+
+ The description above can be translated as follows:
+  
+  
+  (a)	MET/Heart/Sleep
+  
+  ![ ](/Users/fabiana/Documents/Data Analystic Google/METfinal.jpg)
+  
+
+(b)	Weight:     BMI
+		            Weight
+		            Frequency
+
+(c)	Daily Activity:  Step
+                     Calories
+
+## IV.2) Discoveries
+
+  There are functions that are automatically started with the watch use, and functions that need to be initiated.
+
+  Unless the data offered have lost some information, by the number of persons who used specifics functions it is possible to estimate the first trend, which functions are searched and with which frequency they are looked for. 
+
+![ ](/Users/fabiana/Documents/Data Analystic Google/functionpreftable.jpg)
+
+What can be translate in a pie chart as follows:
+
+![ ](/Users/fabiana/Documents/Data Analystic Google/functionprefpie.jpg)
+
+### IV.2.1 – Weight
+
+#### IV.2.1.1) BMI
+
+  As presented before:
+
+*BMI = weight / (height)2*
+
+,so if we have the weight and the BMI, we can calculate the height.
+
+![ ](/Users/fabiana/Documents/Data Analystic Google/height.jpg)
+  
+  By now, we can start figuring out who from those 8 participants are women.
+  
+  Now, we can conclude that, the weight control is something more present to women. But exists also for men. 
+  
+  The measure´s frequency here can be related not only for the gender, but also for the use of connected device to the watch. 
+
+  From this table calculated, we have possible women for 6 participants over 8, what gives us **75% of the women control their height**.
+  
+  This theory will be, or not be, confirmed in next analysis.
+  
+#### IV.2.1.2 )   MET
+
+  Even though, the initial MET data frame has Narrow in the name, there are MET values not only for narrow activities, but also for wide activities.
+  
+  It´s possible to see MET for wide activities with values faraway 6+ (in the table 60+). 
+  
+  It was investigated those values to understand the activities the participants usually do.
+  
+  By observing the time and date for each value (for this study it was selected to present, only a few participants to do this analysis, otherwise it would be extensively), it is possible to cross with the Heart Rate data frame in the same date and time.
+  
+  By doing that, it was possible to see, that many of the participants workout with a relative week frequency, and also extract their “Heart Rate max” values and the duration of the intense activity.
+  
+  The idea here is to observe in which range of “Heart Rate max” they were working out. By doing that, as it was presented previously in this work, is possible to estimate a range of their age, and confirm the gender possibility, since the “Heart Rate max” is different from men and women.
+  
+  (a)	By crossing **“METs classification”** with **“Heart Rate 190-222”** and with **“Heart Rate 170-189”**, remembering it was chosen two participants to show the explanation above.
+  
+**Id = 2022484408**
+**Id = 4558609924**
+
+a.1) Id = 2022484408:
+
+**METs classification:** 
+- MET : between 140 - 146, 
+- Time : between 16 :34 – 17 :07
+- Date : 2016-04-21
+
+**Heart Rate 190 – 222:**
+- bpm : between 203 – 193
+- Time : 16 :31 :20 – 17 :07 :35
+- Date : 2016-04-21
+
+  As it can be saw the time with MET vigorous to the date 2016-04-21 coincides with the same time interval.
+  
+  It seems to be a continuous exercise, so to define the duration of participant´s activity for this day, it was explored the evolution for the same date and time for lower (but, not low values such as for rest heart rate), than 190-222 bpm.
+  
+  Then it was run a SQL query to create the data frame exclusive for that Id.
+  
+```{r heart rate 20224 }
+heart_Rate20224 <- sqldf ("SELECT * 
+                        	 FROM heart_rate
+                        	 WHERE Id = 2022484408
+                        	 AND 
+                        	 Date = '2016-04-21'
+                       		 AND
+                         	 HeartTime BETWEEN '15:00:00' AND '18:15:00' ")	
+
+glimpse(heart_Rate20224)
+```
+  As a glimpse mode it was possible to see that the bpm started to rump up.
+  
+  To facilitate the exercise´s visualization to the day 2016-04-21, it was plotting the following graphic.
+  
+```{r graphics20224}
+graphics_20224 <- ggplot(data = heart_Rate20224) +
+          geom_point(mapping = aes(x = HeartTime, y = Value)) 
+
+graphics_20224 + labs(title = "Heart Rate 2022484408 \n 2016-04-21 15h-18h", y = "BPM") 
+
+```
+  
+  The time label (x axis) was in seconds, so the number of divisions were too huge to combine with the y axis. But that doesn´t interfere in the analysis, because we already have the values in tables.
+
+ From the graphic it is possible to extract the workout period of that day, and also to understand that the participant was working out in the VO2 max condition.
+
+ Now, as explained previously, the HRmax is function of the age and gender. The VO2 max is specific train type, this is a heavy resistance.
+  
+ From the Heart Rate table, selecting Id 2202484408 and ascending Value, it´s possible to see the HRrest = 38.
+
+ Now let´s execute the calculus: 
+	
+(a)	From the Karvonen formula, presented before:
+
+	  HRVO2 training => 95-100%  = (203-38)/(HRmax-38),
+giving,
+
+- 95% -> HRmax ~ 211,68
+- 100% -> HRmax ~ 203
+
+(b)	From the Astrand formula, presented before, there are the 4 possible options:
+
+-	For a men: 95% -> age = 220-211 = 9
+-	Form men: 100% -> age = 220-203 = 17
+-	For women: 95% -> age = 226-211 = 15
+-	For women: 100% -> age = 226-203 = 23
+
+  For last, it was used the number of Steps, or with the same finality the Calories, for the time interval studied to confirm the person was doing exercises, by querying with SQL:
+
+```{r steps20224}
+steps_20224 <- sqldf ("SELECT *
+      		             FROM minute_StepsWide
+     		               WHERE Id = 2022484408
+      		             AND
+      		             Date = '2016-04-21'
+     		               AND 
+     		               time BETWEEN '16:15:00' AND '17:20:00' ")
+
+glimpse(steps_20224)
+
+```
+
+  
+  Definitely Id 2202484408 is in a very good shape. With a very low HR rest, and a very high HR max. Id is not a person worried about weight, unless the data for some reason wasn´t offered, there is 75% chance of being a male. In this case we could pick up the male with 17 years. 
+  
+  By through the Calories wide data frame, was possible to see that this person, not only have one period during the day where he spends training, but he trains all day with different intensities. That lead us to think about him as an athlete.
+  
+  
+(b.1) Id = 4558609924
+
+**METs classification:** 
+- MET : between 140 - 144, 
+- Time : between 13 :35 – 13 :36
+- Date : 2016-05-08
+
+**Heart Rate 190 – 222:**
+- bpm : between 203 – 193
+- Time : 16 :34 :15 – 13 :54 :10
+- Date : 2016-05-08
+
+As it can be saw the time with MET vigorous to the date 2016-05-08 coincides with the same time interval.
+  
+  It seems to be a continuous exercise, so to define the duration of participant´s activity for this day, it was explored the evolution for the same date and time for lower (but, not low values such as for rest heart rate), than 190-222 bpm.
+  
+ Then it was review the SQL query created before for this exclusive Id.
+
+ To facilitate the exercise´s visualization to the day 2016-05-08, it was plot the following graphic.
+
+```{r graphics4558}
+graphics_4558 <- ggplot(data = heart_rate4558) +
+  		geom_point(mapping = aes (x = HeartTime, y = Value))
+
+graphics_4558 + labs(title = "Heart Rate 4558609924 \n 2016-05-08 11h-14h ", y = "BPM")
+```
+ The time label (x axis) was in seconds, so the number of divisions were too huge to combine with the y axis. But that doesn´t interfere in the analysis, because we already have the values in tables.
+
+ From the graphic it is possible to extract the workout period of that day, and also to understand that the participant was working out in the VO2 max condition.
+
+ Now, as explained previously, the HRmax is function of the age and gender. The VO2 max is specific train type, this is a heavy resistance.
+
+ From the Heart Rate table, selecting Id 4558609924 and ascending Value, it´s possible to see the HRrest = 44.
+
+ Now let´s execute the calculus: 
+
+(c)	From the Karvonen formula, presented before:
+
+ HRVO2 training => 95-100%  = (199-38)/(HRmax-38),
+giving,
+
+-	95% -> HRmax ~ 199
+- 100% -> HRmax ~ 199
+
+(d)	From the Astrand formula, presented before:
+
+-	For a men: 95% -> age = 220-199 = 21
+-	Form men: 100% -> age = 220-199 = 21
+-	For women: 95% -> age = 226-199 = 27
+-	For women: 100% -> age = 226-199 = 27
+
+ For last, it was used the number of wide calories, or with the same finality the Calories, for the time interval studied to confirm the person was doing exercises, by querying with SQL:
+
+```{r calories4558}
+calories_4558 <- sqldf ("SELECT *
+                     FROM hourly_Calories
+                     WHERE Id = 4558609924
+                     AND
+                     Date = '2016-05-08'
+                     AND 
+                     time BETWEEN '11:00:00' AND '14:15:00' ")
+head(calories_4558)
+```
+
+ Id 4558609924 is also in a very good shape. With a very low HR rest, and a very high HR max. Id is a person worried about weight, and with the height estimated, there is 75% chance of being a woman. In this case we could pick up the woman with 27 years. 
+
+ She is not a person who trains every day.
+
+ **CONCLUSION:** Here we found another trend, the training physical activities control, by heart rate.
+ 
+ 
+#### IV.2.1.3 ) Sleep
+
+ To finish the analysis. This sleep part is something very interesting.
+ 
+ The first step made was to count the number of each “Sleep state” in the minute Sleep data frame as follows:
+
+```{r value3}
+sqldf ("SELECT COUNT(value)
+        FROM minute_Sleep
+        WHERE value = '3' ") 
+
+```
+```{r value1}
+sqldf  ("SELECT COUNT(value)
+       	 FROM minute_Sleep
+       	 WHERE value = '1' ")            
+```
+
+```{r value2}
+sqldf ("SELECT COUNT(value)
+        FROM minute_Sleep
+        WHERE value = '2' ")           
+```
+  With that it was possible to see that most of the participants have more “Asleep” time during the night than the “Restless” and “Awake”. This can be observed in the pie chart below:
+  
+![ ](/Users/fabiana/Documents/Data Analystic Google/sleeppie.jpg)
+ This is something expected, as it was mentioned previously, the light sleep is the principal Sleep State. It means that between 7 to 9 sleep hours per day the rest part stays between 50 – 65 minutes per night.
+
+ This indicates that probably there are a big portion of people who looks for some solution for their tiredness and have been having sleep troubles. That´s another trend searched for the smart watch’s users.
+ 
+ It was calculated the mean of “Total Time in Bed” and the mean of the “Total Minutes Asleep” from the data frame “Sleep Day” as follows:
+
+```{r summary sleep1}
+summary(sleep_Day$TotalMinutesAsleep)
+```
+```{r summary sleep2}
+summary(sleep_Day$TotalTimeInBed)
+```
+  Based in the mean values for the two tables above, it was possible to obtain the mean value for the difference between the Total Time in Bed and Total Minutes Asleep of 39.3 minutes.
+
+  This time is divided into the time necessary to start sleeping and the number of times of wake up during the sleep period, such as, per example, some bathroom or kitchen moments in the night.
+
+  Those sleep data could help a lot of people to understand what is happening and what they could do to improve their sleep.
+
+  It´s not part of this work to explore more than the user´s trends, but could be interesting to cross the heart rate data frame with the sleep minute to search for the time that the participants started sleeping. As presented before, the heart rate drops at the instant we start sleeping.
+
+  That can be studied to understand the quality of the sleep.
+
+**CONCLUSION:**
+
+The trends founded:
+
+(a)	Functions preferences: 
+
+- Weight  =  24%,
+-	Sleep = 60%,
+-	Heart = 39%.
+(b)	Weight: ~75% of users who search for control weight are women. 
+
+(c)	Heart Rate:
+
+- is mostly used by persons who practice intense physical activities; 
+- used to control training;
+- gives an idea of the physical conditioning;
+- the physical activities are made principally in the free time;
+- particular case of athletes to monitor their practicing. 
+
+(d)	Ages: men and women in the range 17-30 years.
+
+(e)	Sleep:
+
+-	the mean for most people to sleep per day is around 7 hours/day;
+-	the N3 sleep stage stays around 50-65 minutes/day,
+-	most people sleep once per day;
+-	the mean of being awake is ~39 minutes/night, what can be divided between before sleep, in the middle of the night to go to the bathroom, or drink water in the kitchen, resting awake in those situations for something between 4 minutes.
+
+# Step V.	ACT
+
+ It is well known that 21% of the adults Americans use smart watches, where two thirds of them are women. Click [here](https://www.pewresearch.org/fact-tank/2020/01/09/about-one-in-five-americans-use-a-smart-watch-or-fitness-tracker/)  
+
+ In the cases were the participants used a lot of functions, correlating data was more precise and could offer better feedback to the user.
+
+ Most people don´t profit well everything the monitors could give, exactly because they don´t use all the offered functions. To have a better help all the functions should be activated, it could in a way be stimulated to do so.
+
+ Activities and their intensities, weight, sleep quality, heartbeat and diet are in the real life correlated. 
+
+ Sometimes, having sleep trouble is related for different reasons, such as, per example, the time before going to bed, or what was ate at the night.
+
+ If we have a permanent follow up, by having some trouble in one day, it could offer a suggestion to change in the next day some routines which could had badly influenced the sleep time, for example.
+
+ By knowing that, with all the trends, add functions could be interesting, only if they can add value to the old ones, such as blood oxygen, body temperature and blood pressure per example.
+ 
+ The weight function, for women, could indicate the best day to measure the weight, based in their menstrual cycle. By doing that, it could be avoided those liquid retention days.
+
+ The smart watches offer much more than the people profit. One thing that could be interesting is to integrate it to a health system when it is observed a different pattern than the usual, for functions such as heart rate, per example. Then some instructions like "look for a doctor" and indicate the problem observed. With time this could be integrated direct with the doctor´s office. This could help to avoid fatalities and expand the use for another age rates, increasing significantly the user´s market (addressing more than 3 billion people that are not users today).
+
+ To women, who most have worries and difficulties with losing and control weight; as it is known today, a radical change in activities and diet time to time can offer a better progress towards their goal. Our body adapts to a constant routine, so offer some way to break it would help to move forward as a great add.
+
+ And for last, even there are a lot of people who do not agree with open their data to researchers, the level of information that could be used for good study to prevent diseases and improve our life, is so big, that could have a proposition with a consent form. For those who think that is a great thing, offer to link then to the Research where their data would be used, allowing them to be able to profit the discoveries.
+
+
+
+
+
+  
